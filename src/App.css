@@ -202,32 +202,101 @@ background-color: #b8c6a1;
   background-position: center;
 }
 
+.card-group{
+  margin-top: 160px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#card{
+  text-align: center;
+  background: none;
+  color: #fff;
+  opacity: 0.7;
+  border: 2px solid gold;
+  border-radius: 20px;
+  padding: 20px;
+  width: 25%;
+}
+
+#card h3{
+  font-size: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#card h3::after {
+  content: '';
+  width: 100px;
+  height: 6px;
+  border-radius: 3px;
+  /* background: #3c0000; */
+  background: gold;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#card p{
+  font-size: 16px;
+  font-weight: 500px;
+}
+
 /* .Home{
     height: 100vh;
     width: 100%;
     background-image: url('hero-background.png');
 } */
 
-.carimg{
+/* .carimg{
     height: 400px;
     width: 500px;
     margin-left: 45%;
     margin-top: -25%;
-}
+} */
 
-.Logo h1{ 
+.hero-text h1{ 
     padding: 70px;
+    padding-bottom: 80px;
     font-size: 30px;
-    /* margin-left: 20px; */
-    color: #15191d;
+    text-align: left;
+    margin-left: 30px;
+    color: #fff;
 }
 
-.Logo p {
-    font-size: 20px;
-    text-align: center;
-    /* margin-left: 85px; */
+.hero-text h1 span{
+  padding-bottom: 10px;
+}
+
+/* .hero-text h1 span::after{
+  content: '';
+  width: 100px;
+  height: 4px;
+  border-radius: 50% 5% 50% 5%;
+  background: gold;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+} */
+
+.hero-text p {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 98px;
     margin-top: -5%;
-    color: #15191d;
+    color: #fff;
+    font-size: 25px;
+}
+
+.hero-cta-btn{
+  margin-left: 98px;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: gold;
 }
 
 /* Begining of Search Form Styling */
@@ -367,8 +436,8 @@ font-weight: bold;
 }
 
 .navbar-link:hover {
-color: #f55454;
-text-decoration: solid underline;
+color: gold;
+
 }
 
 .dropdown {
@@ -390,8 +459,8 @@ color: #ccc;
 position: absolute;
 top: 100%;
 /* left: 0; */
-background-color: #d64a4a;
-color: #fff;
+background-color: gold;
+color: #111;
 padding: 0.5em;
 border-radius: 0.5em;
 display: none;
@@ -419,15 +488,16 @@ color: #fff;
 }
 
 .download-link a {
-  background-color: #d64a4a; 
+  background-color: gold; 
   padding: 10px; 
   border-radius: 5px; 
   font-weight: bold;
+  color: #111;
 }
   
-.download-link a:hover {
+/* .download-link a:hover {
   color: #fff; 
-}
+} */
 
 
 .appmenu{

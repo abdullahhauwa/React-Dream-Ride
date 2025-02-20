@@ -26,13 +26,30 @@ const hero = () => {
     </ul>
   </nav>
   <div id="Home">
-    <div className="Logo">
-      {/* <h1>Premium <br />
-        Car Rental <br />
-        in Lagos, Nigeria</h1>
-      <p>Don't deny yourself the pleasure of  <br />
-        driving the best premium cars from <br />
-        around the world here and now</p> */}
+    <div className="hero-text">
+      <h1>Rent Your Dream Car Across <span>Nigeria!</span></h1>
+      <p>Our wide range of cars are available for rent in Abuja, 
+        <br/>Lagos, and Port Harcourt. 
+        <br/>Get behind the wheel and take control of your journey.
+      </p>
+      <button className='hero-cta-btn'>Get Started</button>
+      <p></p>
+    </div>
+    <div className='hero-cards'>
+      <div className='card-group'>
+        <div id='card'>
+          <h3>Book in Minutes</h3>
+          <p>No hassle, no fuss. Book your dream car with <br/>just a few clicks.</p>
+        </div>
+        <div id='card'>
+          <h3>No Hidden Fees</h3>
+          <p>We cover your vehicle licensing fee, so you don't <br/>have to worry about extra costs.</p>
+        </div>
+        <div id='card'>
+          <h3>Drive With Peace Of Mind</h3>
+          <p>Our third-party insurance has got you covered in <br/>case of any unexpected events.</p>
+        </div>
+      </div>
     </div>
     {/* <img className="carimg" src="motor.jpg.png" alt="carimg" /> */}
     {/* <div className="car-logos">
