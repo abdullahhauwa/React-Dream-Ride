@@ -15,10 +15,10 @@ function App() {
   return (
     <>
     <Hero/>
-    <Fleet/>
     <Features/>
+    <Fleet/>
     <Book/>
-    <Download/>
+    {/* <Download/> */}
     <Footer/>
     </>
   )
