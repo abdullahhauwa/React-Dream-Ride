@@ -10,7 +10,7 @@ const hero = () => {
     </div>
     <ul className="navbar-menu">
       {/* </i><img src="brrea.jpg.png " alt="logo" class="mylogo"> */}
-      <img src="logoo.jpg.png " alt="logo" className="mylogo" />
+      <img src="logoo.jpg.png " alt="dream-ride-logo" className="mylogo" />
       <li><a href="#home" className="navbar-link active">Home</a></li>
       <li><a href="#cars" className="navbar-link active">Cars</a></li>
       <li><a href="#Features" className="navbar-link active">Features</a></li>
