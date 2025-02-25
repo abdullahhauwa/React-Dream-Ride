@@ -1,39 +1,35 @@
 import React from 'react'
+import { useState } from 'react'
+import Navbar from '../components/navbar.jsx'
+// import SignInForm from '../components/signinForm'
 
 const hero = () => {
   return (
     <div>
       <section className="hero-section">
-  <nav className="navbar">
+        <Navbar/>
+ {/* <div className='navbar-outer'> */}
+ {/* <nav className="navbar">
     <div className="navbar-brand">
-      {/* <p>DreamRide</p> */}
+      <p>DREAMRIDE</p>
     </div>
     <ul className="navbar-menu">
-      {/* </i><img src="brrea.jpg.png " alt="logo" class="mylogo"> */}
-      <img src="logoo.jpg.png " alt="dream-ride-logo" className="mylogo" />
-      <li><a href="#home" className="navbar-link active">Home</a></li>
+     <div className='navbar-middle-content'>
+     <li><a href="#home" className="navbar-link active">Home</a></li>
       <li><a href="#cars" className="navbar-link active">Cars</a></li>
       <li><a href="#Features" className="navbar-link active">Features</a></li>
       <li><a href="#Contact" className="navbar-link active">Rent a Car</a></li>
-      <li className="download-link"><a href="#Download" className="navbar-link active ">Download App</a></li>
-      <li className="dropdown">
-        <a href="#" className="dropdown-toggle">More <i className="fas fa-caret-down" /></a>
-        <ul className="dropdown-menu">
-          <li><a href="#testimonial" className="navbar-link active">Help</a></li>
-          <li><a href="#help" className="dropdown-link">Rent Today</a></li>
-        </ul>
-      </li>
+     </div>
+      <div className='profile'>
+      <button className="signin-button">Sign In</button>
+      </div>
     </ul>
-  </nav>
+  </nav> */}
+ {/* </div> */}
   <div id="Home">
     <div className="hero-text">
-      <h1>Rent Your Dream Car Across <span>Nigeria!</span></h1>
-      <p>Our wide range of cars are available for rent in Abuja, 
-        <br/>Lagos, and Port Harcourt. 
-        <br/>Get behind the wheel and take control of your journey.
-      </p>
+      <h1>Flexible Car Rental <br />Across Nigeria.</h1>
       <button className='hero-cta-btn'>Get Started</button>
-      <p></p>
     </div>
     <div className='hero-cards'>
       <div className='card-group'>
@@ -63,8 +59,6 @@ const hero = () => {
     </div> */}
     </div>
   </section>
-  
-
     </div>
   )
 }

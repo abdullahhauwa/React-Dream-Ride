@@ -1,10 +1,9 @@
 import React from 'react'
 
-const fleet = () => {
+const random = () => {
   return (
     <div>
-{/* Begining Of Vehicle Fleet Section */}
-<section id="Cars">
+      {/* <section id="Cars">
   <div className="car-fleet">
     <h1><strong>Our Vehicle Fleet</strong></h1>
     <p>We provide our customers with the most incredible driving emotions <br />
@@ -58,7 +57,6 @@ const fleet = () => {
         <img src="https://i.pinimg.com/736x/17/a1/3d/17a13d4e88c50c683c2dd817eeb685a2.jpg" alt="Car 6" />
         <img src="https://i.pinimg.com/736x/a8/01/71/a80171b3a73200f3cc931ca3e51b8871.jpg" alt="Car 7" />
         <img src="https://i.pinimg.com/736x/50/9d/c5/509dc55c835137d34416514d1f9e9cd2.jpg" alt="Car 8" />
-        {/* Add images here */}
       </div>
       <div id="sports-gallery" className="car-gallery" style={{display: 'none'}}>
         <img src="https://i.pinimg.com/736x/94/51/93/9451933b22c10092001cc4dd340e934e.jpg" alt="Car 1" />
@@ -69,15 +67,12 @@ const fleet = () => {
         <img src="https://i.pinimg.com/736x/b7/3f/75/b73f75c17fafa9af256f5e0536c1fefa.jpg" alt="Car 6" />
         <img src="https://i.pinimg.com/736x/b9/5c/e9/b95ce90e02612aa55404e608c1a9adb9.jpg" alt="Car 7" />
         <img src="https://i.pinimg.com/736x/ea/6d/16/ea6d164e74ec4ce781467da62afd88da.jpg" alt="Car 8" />
-        {/* Add images here */}
       </div>
     </div>
-    {/*  End Of Vehicle Fleet Section*/}
-  </div></section>
-
-
+  </div>
+  </section> */}
     </div>
   )
 }
 
-export default fleet
+export default random
