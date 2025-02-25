@@ -7,8 +7,8 @@ const features = () => {
   {/* Begining of Features Section */}
   <section id="Features">
     <div className="feature-section">
-      <h1><strong>Key Features</strong></h1>
-      <p>We all about our clients comfort and safety, <br />
+      <h1>What We Offer</h1>
+      <p>We are all about our clients comfort and safety, <br />
         That's why we provide the best service you can imagine.</p>
       <div className="box-model">
         <div className="box">
@@ -28,6 +28,7 @@ const features = () => {
           <h3>Absolute Confidentiality</h3>
         </div>
       </div>
+      {/* <hr className='features-horizontal-line'/> */}
     </div>
   </section>
   {/* Ending of Features Section */}

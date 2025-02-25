@@ -1,17 +1,9 @@
 import React from 'react'
 
-const book = () => {
+const bookForm = () => {
   return (
     <div>
-{/* Begining of Book Section */}
-<section id="rental-form">  
-  <div className="rental-form">
-    <h1><i className="fas fa-car" /> Rental Cars from just <br /></h1>
-    <h5>$25/Day</h5>
-    <p><span><i className="fas fa-tag" /> 15% off</span> first time reservations <br /><br /><br />
-      <button>Redeem</button></p>
-    <img className="rentalimg" src="neewcar.jpg.png" alt="rentalimg" />
-    <form>
+        <form>
       <div className="form-container">
         <div className="form-group">
           <label htmlFor="car-type">Car Type:</label>
@@ -65,14 +57,10 @@ const book = () => {
           <input type="time" id="drop-off-time" name="drop-off-time" />
         </div>
         <button type="submit">Book Now</button>
-      </div></form>
-  </div>
-</section>
-{/* End of Book section */}
-
-
+      </div>
+      </form>
     </div>
   )
 }
 
-export default book
+export default bookForm
