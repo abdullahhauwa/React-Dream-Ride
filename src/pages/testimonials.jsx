@@ -1,12 +1,11 @@
-import React from 'react'
-import FirstImage from '../assets/images/Review1.png'
-import SecondImage from '../assets/images/Review2.png'
-import ThirdImage from '../assets/images/Review3.png'
+import FirstImage from "../assets/images/Review1.png";
+import SecondImage from "../assets/images/Review2.png";
+import ThirdImage from "../assets/images/Review3.png";
 
 const testimonials = () => {
   return (
-   <div>
-  {/* <section className="testimonials-section">
+    <div id="testimonial">
+      {/* <section className="testimonials-section">
     <div className="testimonials">
       <header className="header-section">
         <h2>TESTIMONIALS</h2>
@@ -41,47 +40,69 @@ const testimonials = () => {
     </div>
   </section> */}
 
-  <section className='testimonials-section'>
-  <header className="header-section">
-    <h2>Testimonials</h2>
-  </header>
-  <div className='testimonials-cards'>
-  <div id="testimonials">
-    <img src={FirstImage} alt="fashion style" width="100px" height="200px" />
-    <header className="headings"><h4>Angel Francis</h4></header>
-    <p>I was impressed by the wide selection of cars at DreamRide.
-      The staff were helpful and didn't pressure me into making a decision.
-     <br />
-      {/* <button>View More</button> */}
-    </p>
+      <section className="testimonials-section">
+        <header className="header-section">
+          <h2>Testimonials</h2>
+        </header>
+        <div className="testimonials-cards">
+          <div id="testimonials">
+            <img
+              src={FirstImage}
+              alt="fashion style"
+              width="100px"
+              height="200px"
+            />
+            <header className="headings">
+              <h4>Angel Francis</h4>
+            </header>
+            <p>
+              I was impressed by the wide selection of cars at DreamRide. The
+              staff were helpful and didn&apos;t pressure me into making a
+              decision.
+              <br />
+              {/* <button>View More</button> */}
+            </p>
+          </div>
+          <div id="testimonials">
+            <img
+              src={SecondImage}
+              alt="jfif fashion"
+              width="100px"
+              height="200px"
+            />
+            <header className="headings">
+              {" "}
+              <h4>Mubira Ali</h4>
+            </header>
+            <p>
+              I was a bit skeptical about buying a used car, but DreamRide made
+              the process easy for me. They were transparent.
+              <br />
+              {/* <button>View More</button> */}
+            </p>
+          </div>
+          <div id="testimonials">
+            <img
+              src={ThirdImage}
+              alt="fashion test"
+              width="100px"
+              height="200px"
+            />
+            <header className="headings">
+              {" "}
+              <h4>James Faisal</h4>
+            </header>
+            <p>
+              I purchased a car from DreamRide a few months ago, and I&apos;ve
+              loved it ever since. The staff were helpful and friendly.
+              <br />
+              {/* <button>View More</button> */}
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
-  <div id="testimonials">
-    <img src={SecondImage} alt="jfif fashion" width="100px" height="200px" />
-    <header className="headings">  <h4>Mubira Ali</h4></header>
-    <p>I was a bit skeptical about buying a used car, but DreamRide
-      made the process easy for me. They were transparent.<br />
-      {/* <button>View More</button> */}
-    </p>
-    </div>
-  <div id="testimonials">
-    <img src={ThirdImage} alt="fashion test" width="100px" height="200px" />
-    <header className="headings"> <h4>James Faisal</h4></header>
-    <p>I purchased a car from DreamRide a few months ago, and I've 
-      loved it ever since. The staff were helpful and friendly.
-      <br />
-      {/* <button>View More</button> */}
-    </p>
-    </div>
-  </div>
-    </section>
-</div>
-    )
-}
+  );
+};
 
-export default testimonials
-
-{/* </div>
-  )
-}
-
-export default testimonials */}
+export default testimonials;

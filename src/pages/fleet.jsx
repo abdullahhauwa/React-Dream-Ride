@@ -59,7 +59,7 @@ function Fleet() {
   }, [totalSlides]);
   return (
     <>
-      <div className="Fleet-section">
+      <div className="Fleet-section" id="fleet">
         <h2>
           Our Vehicle <span>Fleet</span>
         </h2>
