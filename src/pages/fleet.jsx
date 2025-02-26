@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import BookForm from "../components/bookForm";
 const fleetData = [
   {
     id: 1,
@@ -38,6 +39,12 @@ const fleetData = [
 ];
 const category = ["All", "Luxury", "Economic", "SUV", "Sports"];
 function Fleet() {
+  const [selectedCar, setSelectedCar] = useState(null);
+  const [showForm , setShowForm ] = useState(false);
+  const handleShowForm = () => {
+    setShowForm(!showForm);
+  }
+ const handleCarSelection = (car) => {setSelectedCar(car);};
   const [activeFilter, setActiveFilter] = useState("All");
   const [filteredCars, setFilteredCars] = useState(fleetData);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -84,7 +91,10 @@ function Fleet() {
                 <p className="price">{car.price}</p>
                 <button
                   className="select-btn"
-                  onClick={() => (window.location.href = "#book-me")}
+                  onClick={() =>{  
+                    handleShowForm()
+                    (window.location.href = "#book-me")
+                  }}
                 >
                   Select
                 </button>
@@ -99,9 +109,14 @@ function Fleet() {
               onClick={() => setActiveIndex(i)}
             ></span>
           ))}
+
         </div>
+        {showForm &&  <BookForm onClose={handleShowForm} car={selectedCar}  /> }
+
+       
       </div>
     </>
+   
   );
 }
 export default Fleet;
