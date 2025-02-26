@@ -3,6 +3,8 @@ import React from 'react'
 const bookForm = () => {
   return (
     <div>
+    <div className="modal-content">
+      <span className="close">×</span>
         <form>
       <div className="form-container">
         <div className="form-group">
@@ -59,6 +61,7 @@ const bookForm = () => {
         <button type="submit">Book Now</button>
       </div>
       </form>
+     </div> 
     </div>
   )
 }

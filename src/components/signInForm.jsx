@@ -14,7 +14,7 @@ const signInForm = () => {
 <div className="modal-content">
   <span className="close">×</span>  
   <form autoComplete="off" className="login-form">
-    <p className="message">Sign in to Book now!</p>
+    <p className="message">Please Register</p>
     {/* 
   <div class="form-group">
       <div class="input-field">
@@ -30,6 +30,11 @@ const signInForm = () => {
       {/* <span>Email</span> */}
       {/* <label id="form-email" for="email">Email</label> */}
       <input type="text" placeholder="Email" required />
+    </div>
+    <div className="input-field">
+      {/* <span>Email</span> */}
+      {/* <label id="form-email" for="email">Email</label> */}
+      <input type="text" placeholder="Driver's Licencse" pattern='[A-Za-z0-9] {9}' maxLength={9} required />
     </div>     
     <div className="input-field">
       {/* <span>password</span> */}
@@ -48,11 +53,11 @@ const signInForm = () => {
       </span>
     </div>
     <button className="submit">Submit</button>
-    <p className="signin">
+    {/* <p className="signin">
       Don't have an account?
       <button className="registerbutton">Register</button>
-      {/* <a href="#">Register</a> */}
-    </p>
+      <a href="#">Register</a>
+    </p> */}
   </form>
 </div>
 
